@@ -24,7 +24,7 @@ public class TE1 {
 
     @ParameterizedTest
     @CsvSource({"0,3250000","10,12500000","22,25000000","40f,50000000","-1,-1500000","-1,999999999999f"})
-    public void parameterizedEQV(double pajak, double gaji){
+    public void parameterizedEC(double pajak, double gaji){
         Assertions.assertEquals(pajak, program.getPajak(gaji));
     }
 
